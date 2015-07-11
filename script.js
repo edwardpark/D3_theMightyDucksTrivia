@@ -19,11 +19,9 @@ function askQuestion(){
   console.log(i);
   $(".inputField").val("");
   $(".score").html(score);
-  if(i >= Object.keys(questionBank).length ){ //note: that program isn't registering this at all.
-    console.log("THIS IS THE END!");
+  if(i >= 2){
     givePlayerScore();
-  }else {
-
+} else{
   $("#question").html(questionBank[i][0]);
   getAnswer();
   }
