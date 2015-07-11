@@ -19,9 +19,16 @@ body{
 .score{
   font-size: 3em;
 }
-.game-border{
+.gameView{
     border:medium solid black;
     padding: 50px;
+    display: block;
+    margin: 0 auto; 
+}
+.endGameView{
+  background:yellow;
+  width:400px;
+  height:400px;
 }
 
 #question{

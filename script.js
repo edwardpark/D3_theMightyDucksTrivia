@@ -10,6 +10,10 @@ var questionBank ={
 
 function givePlayerScore(){
   console.log("CONGRADS THIS IS THE END OF THE PROGRAM");
+  $(".gameView").fadeOut(400,function(){
+    $(".endGameView").fadeIn();
+  });
+
 }
 
 var score = 0;
@@ -65,5 +69,5 @@ function getAnswer(){
     }
   });
 }
-
+$(".endGameView").hide();
 askQuestion();
