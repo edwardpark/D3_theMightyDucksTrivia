@@ -8,8 +8,9 @@ var questionBank ={
   // 6: ["Question 7: Do you like crossfit?", "yes"]
 }
 
+
 function givePlayerScore(){
-  console.log("CONGRADS THIS IS THE END OF THE PROGRAM");
+
   $(".gameView").fadeOut(400,function(){
     $(".endGameView").fadeIn();
   });
@@ -20,7 +21,7 @@ var score = 0;
 var i = 0;
 
 function askQuestion(){
-  console.log(i);
+  
   $(".inputField").val("");
   $(".score").html(score);
   if(i >= Object.keys(questionBank).length){
@@ -32,14 +33,11 @@ function askQuestion(){
 }
 
 function checkAnswer(){
-  console.log("checkAnswer Fired!");
   var playerAnswer = $(".inputField").val();
-  console.log("playerAnswer was: "+ playerAnswer);
   var correctAnswer = questionBank[i-1][1];
-  console.log("correctAnswer Was: "+ correctAnswer);
 
   if (playerAnswer == correctAnswer){
-    console.log("great job correct!");//replace with CSS visual
+
     score++;
 
 
@@ -55,7 +53,7 @@ function getAnswer(){
 
   $("#submitButton").on("click",function(event){
       i++;
-      console.log("on click event fired!");
+
 
       checkAnswer();
       event.stopPropogation();
@@ -64,7 +62,7 @@ function getAnswer(){
 
   $(".inputField").on("keydown",function(evt){
     if(evt.keyCode == 13){
-      console.log("keydown event fired!");
+
       //replicate for event fired.
     }
   });
