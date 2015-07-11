@@ -16,7 +16,9 @@ body{
   background-color: #F52F4F;
 }
 
-
+.score{
+  font-size: 3em;
+}
 .game-border{
     border:medium solid black;
     padding: 50px;
