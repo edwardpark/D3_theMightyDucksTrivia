@@ -4,14 +4,17 @@ var questionBank ={
   3: ["Question 3: Do you like Cookie?",true],
   4: ["Question 4: Do you like Walking?", false]
 }
-
+var answer; 
 var trueButton = $(".trueB").on("click", function(){
-  console.log("that's true sucka!");
+  return answer = true;
 });
 var falseButton = $(".falseB").on("click",function(){
-  console.log("that's false sucka!");
+  return answer = false;
 });
 
 for(i in questionBank){
+
   $("#question").html(questionBank[i][0]);
+
+
 }
