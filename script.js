@@ -1,11 +1,11 @@
 var questionBank ={
   0: ["Question 1: Do you like cake?", "1"],
   1: ["Question 2: Do you like pizza?","beta"],
-  2: ["Question 3: Do you like Cookie?","zeta"],
-  3: ["Question 4: Do you like Walking?", "prime"],
-  4: ["Question 5: Do you like running?", "yes"],
-  5: ["Question 6: Do you like coding?", "no"],
-  6: ["Question 7: Do you like crossfit?", "yes"]
+  // 2: ["Question 3: Do you like Cookie?","zeta"],
+  // 3: ["Question 4: Do you like Walking?", "prime"],
+  // 4: ["Question 5: Do you like running?", "yes"],
+  // 5: ["Question 6: Do you like coding?", "no"],
+  // 6: ["Question 7: Do you like crossfit?", "yes"]
 }
 
 function givePlayerScore(){
@@ -19,7 +19,7 @@ function askQuestion(){
   console.log(i);
   $(".inputField").val("");
   $(".score").html(score);
-  if(i >= 2){
+  if(i >= Object.keys(questionBank).length){
     givePlayerScore();
 } else{
   $("#question").html(questionBank[i][0]);
