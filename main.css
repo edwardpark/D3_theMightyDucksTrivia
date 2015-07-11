@@ -1,3 +1,28 @@
-p  {
-  color:blue;
+footer header{
+ margin: 50px 0px;
+ color: #F52F4F;
+ font-size: 50px;
+}
+
+body{
+  font-family: 'Ruluko', sans-serif;
+  /*find google font to replace above*/
+ margin: 0px auto;
+ text-align: center;
+ width: 700px;
+}
+.title{
+  font-size: 50px;
+  background-color: #F52F4F;
+}
+
+
+.game-border{
+    border:medium solid black;
+    padding: 50px;
+}
+
+#question{
+  border:medium solid green;
+  padding: 50px;
 }
