@@ -1,11 +1,11 @@
 var questionBank ={
-  0: ["Question 1: Do you like cake?", "false"],
-  1: ["Question 2: Do you like pizza?","true"],
-  2: ["Question 3: Do you like Cookie?","true"],
-  3: ["Question 4: Do you like Walking?", "false"],
-  4: ["Question 5: Do you like Walking?", "false"],
-  5: ["Question 6: Do you like Walking?", "false"],
-  6: ["Question 7: Do you like Walking?", "false"]
+  0: ["Question 1: Do you like cake?", "no"],
+  1: ["Question 2: Do you like pizza?","yes"],
+  2: ["Question 3: Do you like Cookie?","yes"],
+  3: ["Question 4: Do you like Walking?", "no"],
+  4: ["Question 5: Do you like running?", "yes"],
+  5: ["Question 6: Do you like coding?", "no"],
+  6: ["Question 7: Do you like crossfit?", "yes"]
 }
 
 function givePlayerScore(){
@@ -18,7 +18,7 @@ var i = 0;
 function askQuestion(){
   console.log(i);
 
-  if(i > Object.keys(questionBank).length){
+  if(i >= Object.keys(questionBank).length ){ //note: that program isn't registering this at all.
     console.log("THIS IS THE END!");
     givePlayerScore();
   }else {
@@ -44,13 +44,11 @@ function checkAnswer(){
     console.log("incorrect answer dumbshite!");
   }
 
-
   askQuestion();
 }
 
 
 function getAnswer(){
-
 
   $("#submitButton").on("click",function(event){
       i++;
