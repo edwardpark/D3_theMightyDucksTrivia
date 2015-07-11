@@ -21,7 +21,7 @@ var score = 0;
 var i = 0;
 
 function askQuestion(){
-  
+
   $(".inputField").val("");
   $(".score").html(score);
   if(i >= Object.keys(questionBank).length){
@@ -37,12 +37,12 @@ function checkAnswer(){
   var correctAnswer = questionBank[i-1][1];
 
   if (playerAnswer == correctAnswer){
-
+    //insert border light up and "correct" feedback result
     score++;
 
 
   } else {
-    console.log("incorrect answer dumbshite!");
+    //insert border light up and "incorrect" feedback result 
   }
 
   askQuestion();

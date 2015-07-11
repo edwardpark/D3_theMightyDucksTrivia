@@ -15,7 +15,9 @@ body{
   font-size: 50px;
   background-color: #F52F4F;
 }
-
+.result{
+  font-size: 4em;
+}
 .score{
   font-size: 3em;
 }
