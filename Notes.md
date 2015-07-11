@@ -17,3 +17,13 @@ As a User, I want to see a score of my correct answers, so that I know what my s
 
 As a User, I want to see a result of my
 scores , so that I know how well I did.
+
+MOTHERFUCKING ICING
+
+-Have a simple charted visualization using D3 of correct answers on the side of the screen.
+  -updating the actual visualizaiton data point with scores as the game progresses
+
+--> forward have that a more asthetically pleasing and fun animation.
+
+V3.
+-cue a animated timer for the game before cards turn over int auto false.
