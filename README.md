@@ -1,5 +1,5 @@
 # D3_theMightyDucksTrivia
-web rendered trivia game utilizing D3js dynamic visualization
+web rendered trivia game
 
 This is the first project Assignment for the WDI6 coursework series.
 
