@@ -13,10 +13,6 @@ var questionBank ={
   // 6: ["Question 7: Do you like poodles?", "2"]
 }
 
-var questionBank2 = {
-  0:["Magic Mike is loosely inspired by the pre-fame, short-lived stripper career of which of its stars?","beta"]
-}
-
 function givePlayerScore(){
 
   $(".gameView").fadeOut(400,function(){
@@ -89,26 +85,8 @@ function getAnswer(){
 }
 askQuestion();
 
-//MAGIC TIME NSFW FOR INSECURE MEN.
-$(".magictime").on("click",function(){
-  if($("#css").attr("href") == "magic.css"){
-
-
-    $("#css").attr("href","main.css");
-    window.location.reload();
-
-  } else{
-
-    $("#css").attr("href","magic.css");
-    $(".title").html("Trivia");
-    questionBank = questionBank2;
-    askQuestion();
-
-  }
-});
-
-var prevPlayers = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
-                11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
+var dataset = [ 5, 4, 3, 9, 2, 5, 2, 8,5, 3,
+                1, 2, 5, 2, 8,7, 6, 8, 3, 5 ];
 
 var w = 500;
 var h = 100;
@@ -121,7 +99,8 @@ var svg = d3.select("div.endGameView")
   .attr("height", h);
 var rect = svg.selectAll("rect");
 
-rect.data(prevPlayers)
+
+rect.data(dataset)
  .enter()
  .append("rect")
  .attr("x", function(d, i) { return i * (w / dataset.length);})
@@ -130,7 +109,7 @@ rect.data(prevPlayers)
  .duration(1500)
  .delay(function(d,i){return i * 100;})
 
- .attr("height", function(d){ return d*4;})
- .attr("y", function(d){ return h - (d*4); })
- .attr("fill", function(d) { return "rgb(0, 0, " + (d * 10) + ")";});
+ .attr("height", function(d){ return d* 15;})
+ .attr("y", function(d){ return h - (d* 15); })
+ .attr("fill", function(d) { return "rgb(0, 0, " + (d * 20) + ")";});
  }

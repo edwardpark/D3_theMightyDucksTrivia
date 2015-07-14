@@ -10,15 +10,6 @@ footer header{
   height:500px;
 }
 
-.magictime{
-  text-align: right;
-  text-decoration: none;
-}
-.magictime:hover{
-  color:#DBFF70;
-  font-size:80px;
-  }
-
 body{
   font-family: 'Passion One', cursive;
   /*find google font to replace above*/
