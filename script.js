@@ -5,12 +5,12 @@ $(window).load(function() {
 
 var questionBank ={
   0: ["Question 1: Do you like cake?", "2"],
-  1: ["Question 2: Do you like pizza?","2"],
-  2: ["Question 3: Do you like Cookie?","2"],
-  3: ["Question 4: Do you like Walking?", "2"],
-  4: ["Question 5: Do you like running?", "2"],
-  5: ["Question 6: Do you like coding?", "2"],
-  6: ["Question 7: Do you like poodles?", "2"]
+  1: ["Question 2: Do you like pizza?","2"]
+  // 2: ["Question 3: Do you like Cookie?","2"],
+  // 3: ["Question 4: Do you like Walking?", "2"],
+  // 4: ["Question 5: Do you like running?", "2"],
+  // 5: ["Question 6: Do you like coding?", "2"],
+  // 6: ["Question 7: Do you like poodles?", "2"]
 }
 
 var questionBank2 = {
@@ -20,8 +20,11 @@ var questionBank2 = {
 function givePlayerScore(){
 
   $(".gameView").fadeOut(400,function(){
-    $(".endGameView").fadeIn();
+  $(".endGameView").fadeIn();
   });
+  createScores();
+
+
 
 }
 
@@ -103,3 +106,31 @@ $(".magictime").on("click",function(){
 
   }
 });
+
+var prevPlayers = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
+                11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
+
+var w = 500;
+var h = 100;
+var barPadding = 1;
+
+function createScores(){
+var svg = d3.select("div.endGameView")
+  .append("svg")
+  .attr("width", w)
+  .attr("height", h);
+var rect = svg.selectAll("rect");
+
+rect.data(prevPlayers)
+ .enter()
+ .append("rect")
+ .attr("x", function(d, i) { return i * (w / dataset.length);})
+ .attr("width", w/ dataset.length - barPadding)
+ .transition()
+ .duration(1500)
+ .delay(function(d,i){return i * 100;})
+
+ .attr("height", function(d){ return d*4;})
+ .attr("y", function(d){ return h - (d*4); })
+ .attr("fill", function(d) { return "rgb(0, 0, " + (d * 10) + ")";});
+ }
