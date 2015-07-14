@@ -5,9 +5,7 @@ footer header{
 }
 
 .wrapper{
-  background-color:white;
-  border: medium solid black;
-  height:400px;
+  background-color:#041D37;
 }
 
 .magictime{
@@ -20,20 +18,20 @@ footer header{
   }
 
 body{
-  font-family: 'Passion One', cursive;
-  /*find google font to replace above*/
+background-image: url("magicmikebackground.jpg");
+font-family: sans-serif;  /*find google font to replace above*/
  margin: 0px auto;
  text-align: center;
  width: 700px;
 }
 .title{
-  font-family: 'Passion One', cursive;
+font-family: 'Sigmar One', cursive;
   font-size: 50px;
   background-color: black;
   color:white;
 }
 .result{
-  font-size: 5em;
+  font-size: 4em;
 }
 .score{
   font-size: 3em;
@@ -43,17 +41,20 @@ body{
     margin: 0 auto;
 }
 .endGameView{
-  background:white;
-  color:black;
-  margin: 0 auto;
+  background:yellow;
+  width:400px;
+  height:400px;
 }
-
-
+.submitButton{
+  color:black;
+}
 #question{
-  border:medium solid black;
+  border:medium solid white;
   font-size: 2em;
   padding: 50px;
+  color:white;
 }
+
 
 input[type=text]:focus, textarea:focus {
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);

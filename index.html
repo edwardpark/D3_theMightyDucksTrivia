@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>D3 Mighty Ducks Trivia</title>
+  <title>Trivia</title>
 
 
     <meta charset="utf-8">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="main.css">
+    <link href='http://fonts.googleapis.com/css?family=Anton|Sigmar+One|Bangers|Passion+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" id="css" href="main.css">
+
 </head>
 <body>
+<div class = "wrapper">
   <header>
-    <div class = "title">D3 Mighty Ducks Trivia</div>
+    <div class = "title">GENERAL ASSEMBLY TRIVIA</div>
+    <a href="#" class ="magictime">&amp;</a>
   </header>
   <div class = "gameView">
     <div id="question">The Question</div>
     <input type="text" class ="inputField" autofocus="true">
     <input type="submit" id ="submitButton">
-    <p class="result"></p>
+    <p class="result1"></p>
   </div>
   <div class ="endGameView">
     <h1>GAME OVER!</h1>
@@ -24,6 +28,7 @@
     <p> Score: </p>
     <p class= "score"></p>
   </div>
+</div>
   <footer>
 
   </footer>
