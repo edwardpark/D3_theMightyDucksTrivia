@@ -3,7 +3,7 @@ $(window).load(function() {
 });
 
 var questionBank ={
-  0: ["Why is there something rather than nothing?-", "42"],
+  0: ["Why is there something rather than nothing?", "42"],
   1: ["Is our universe real?","42"],
   2: ["Do we have free will?","42"],
   3: ["Does God exist?", "42"],
