@@ -14,14 +14,10 @@ var questionBank ={
 }
 
 function givePlayerScore(){
-
   $(".gameView").fadeOut(400,function(){
   $(".endGameView").fadeIn();
   });
   createScores();
-
-
-
 }
 
 var score = 0;
@@ -85,8 +81,11 @@ function getAnswer(){
 }
 askQuestion();
 
+//////////////////////////////////////////////////D3 play around
 var dataset = [ 5, 4, 3, 9, 2, 5, 2, 8,5, 3,
                 1, 2, 5, 2, 8,7, 6, 8, 3, 5 ];
+
+
 
 var w = 500;
 var h = 100;
