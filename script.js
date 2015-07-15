@@ -3,13 +3,13 @@ $(window).load(function() {
 });
 
 var questionBank ={
-  0: ["Question 1: Do you like cake?", "2"],
-  1: ["Question 2: Do you like pizza?","2"],
-  2: ["Question 3: Do you like Cookie?","2"],
-  3: ["Question 4: Do you like Walking?", "2"],
-  4: ["Question 5: Do you like running?", "2"],
-  5: ["Question 6: Do you like coding?", "2"],
-  6: ["Question 7: Do you like poodles?", "2"]
+  0: ["Why is there something rather than nothing?-", "42"],
+  1: ["Is our universe real?","42"],
+  2: ["Do we have free will?","42"],
+  3: ["Does God exist?", "42"],
+  4: ["Is there life after death?", "42"],
+  5: ["Can you really experience anything objectively?", "42"],
+  6: ["What is the answer to everything?", "42"]
 }
 
 function givePlayerScore(){
