@@ -4,6 +4,8 @@ $(window).load(function() {
 });
 
 var questionBank ={
+  // mms: Arrays have numeric index for each element, let's use them instead of a hash with numeric keys
+  // mms: I can't find the mapping for "2" to correct answer.
   0: ["Question 1: Do you like cake?", "2"],
   1: ["Question 2: Do you like pizza?","2"]
   // 2: ["Question 3: Do you like Cookie?","2"],
@@ -20,6 +22,7 @@ function givePlayerScore(){
   createScores();
 }
 
+// mms: please organize global vars together
 var score = 0;
 var i = 0;
 
@@ -58,7 +61,8 @@ function checkAnswer(){
   askQuestion();
 }
 
-
+// mms: naming suggestion (initGetAnswer, setupGetAnswer)
+// mms: This function sets up the events to get our answer
 function getAnswer(){
 
   $("#submitButton").on("click",function(event){
@@ -81,6 +85,7 @@ function getAnswer(){
 }
 askQuestion();
 
+// mms: Let's wrap this in a function too (initD3)
 //////////////////////////////////////////////////D3 play around
 var dataset = [ 5, 4, 3, 9, 2, 5, 2, 8,5, 3,
                 1, 2, 5, 2, 8,7, 6, 8, 3, 5 ];
